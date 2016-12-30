@@ -4,7 +4,7 @@ import { SAVE_COMMENT } from '../../src/actions/types';
 
 describe('Comments Reducer', () => {
   it('unknown type', () => {
-    expect(commentReducer()).to.eql([]);
+    expect(commentReducer(undefined, {})).to.eql([]);
   });
 
   it('SAVE_COMMENT', () => {
